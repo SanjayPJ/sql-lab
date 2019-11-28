@@ -1,0 +1,15 @@
+set serveroutput on
+
+DECLARE
+	n number;
+	r number;
+BEGIN
+	n:=&t;
+	r:= MOD(n, 2); 
+    IF r = 0 THEN
+      dbms_output.put_line('Even'); 
+    ELSE
+      dbms_output.put_line('Odd'); 
+    END IF; 
+END;
+/

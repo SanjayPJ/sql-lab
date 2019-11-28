@@ -1,0 +1,13 @@
+q1-
+
+QL> create or replace procedure maxsal(id int)
+  2  is
+  3  sal sh_emp.salary%type;
+  4  begin
+  5  select salary into sal from sh_emp where salary=(select max(salary) from sh_emp e,sh_project p where e.pno=p.pno);
+  6  dbms_output.put_line(sal);
+  7  end;
+  8  /
+Procedure created.
+SQL> exec maxsal(1);
+146410

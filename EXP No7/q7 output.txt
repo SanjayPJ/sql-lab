@@ -1,0 +1,36 @@
+Q1-
+PL/SQL procedure successfully completed.
+SQL> select * from sh_emp;
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ---------
+E1   munna    manager  F         21      11000 12-AUG-17 P4  LONDON
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR
+E3   amrutha  analyst  F         40       7920 12-SEP-14 P2  LONDON
+E5   rohith   analyst  M         53       1100 12-AUG-10 P1  TIRUR
+E7   sibin    salesman M         25       6600 15-AUG-10 P3  LONDON
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  LONDON
+E4   sandra   salesman M         70        500 15-AUG-10 P3  tirur
+
+Q2-
+SQL> declare
+  2     cursor c is
+  3             select extract(month from DOJ),avg(salary) from sh_emp group by
+extract(month from DOJ);
+  4     mon varchar(4);
+  5     cnt int;
+  6  begin
+  7     open c;
+  8     loop
+  9             fetch c into mon,cnt ;
+ 10             dbms_output.put_line(mon || '-' || cnt );
+ 11             exit when c %notfound;
+ 12     end loop;
+ 13     close c;
+ 14  end;
+ 15  /
+1-4950
+8-5160
+9-7920
+9-7920
+PL/SQL procedure successfully completed.
+

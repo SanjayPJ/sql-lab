@@ -1,0 +1,41 @@
+Q1-
+Trigger created.
+SQL>    delete from sh_project where pno = 'P1';
+        delete from sh_project where pno = 'P1'
+*
+ERROR at line 1:
+ORA-20999: DELETION NOT ALLOWED
+ORA-06512: at "SYSTEM.DEL", line 3
+ORA-04088: error during execution of trigger 'SYSTEM.DEL'
+
+Q2-
+Trigger created.
+SQL> UPDATE SH_EMP SET SALARY = SALARY -  (SALARY*0.2) WHERE ENO = 'E1';
+UPDATE SH_EMP SET SALARY = SALARY -  (SALARY*0.2) WHERE ENO = 'E1'
+    *
+ERROR at line 1:
+ORA-20999: UPDATION NOT ALLOWED
+ORA-06512: at "SYSTEM.UPD", line 3
+ORA-04088: error during execution of trigger 'SYSTEM.UPD'
+
+Q3-
+Trigger created.
+SQL> delete from sh_emp where age<50;
+delete from sh_emp where age<50
+    *
+ERROR at line 1:
+ORA-20999: DELETION NOT ALLOWED
+ORA-06512: at "SYSTEM.DEL2", line 3
+ORA-04088: error during execution of trigger 'SYSTEM.DEL2'
+
+Q4-
+Trigger created.
+SQL> INSERT INTO sh_emp VALUES('E3','RINA','MANAGER','F',45,10000,'05,JAN,1999',
+'P4','LONDON');
+INSERT INTO sh_emp VALUES('E3','RINA','MANAGER','F',45,10000,'05,JAN,1999','P4',
+'LONDON')
+    *
+ERROR at line 1:
+ORA-20999: INSERTION NOT ALLOWED
+ORA-06512: at "SYSTEM.INS", line 3
+ORA-04088: error during execution of trigger 'SYSTEM.INS'

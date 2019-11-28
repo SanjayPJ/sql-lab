@@ -1,0 +1,91 @@
+Q1-
+SQL> set serveroutput on
+SQL> DECLARE
+  2     r number;
+  3     pi number := 3.14;
+  4  BEGIN
+  5     r:=&radius;
+  6     dbms_output.put_line(r * r * pi);
+  7  END;
+  8  /
+Enter value for radius: 2
+old   5:        r:=&radius;
+new   5:        r:=2;
+12.56
+PL/SQL procedure successfully completed.
+
+Q2-
+SQL> declare
+  2     empid sh_emp.eno %type;
+  3     sal sh_emp.salary %type;
+  4  begin
+  5     empid := &empno;
+  6     select salary into sal from sh_emp where empid = eno;
+  7     if sal < 5000 then
+  8             update sh_emp set salary = (0.5 * salary ) where eno = empid;
+  9     elsif sal < 10000 then
+ 10             update sh_emp set salary = (0.1 * salary ) where eno = empid;
+ 11     else
+ 12             dbms_output.put_line('No INCREMENT');
+ 13     end if;
+ 14  end;
+ 15  /
+Enter value for empno: 'E1'
+old   5:        empid := &empno;
+new   5:        empid := 'E1';
+No INCREMENT
+PL/SQL procedure successfully completed.
+
+Q3-
+SQL> declare
+  2     name sh_emp.ename %type;
+  3     sal sh_emp.salary %type;
+  4     dep sh_dep.dname %type;
+  5     project sh_project.pname %type;
+  6     age sh_emp.age %type;
+  7  begin
+  8     name := &empName;
+  9     select e.salary,e.age,d.dname,p.pname into sal,age,dep,project from sh_e
+mp e,sh_project p,sh_dep d where e.pno = p.pno and p.dno = d.dno and e.ename = n
+ame;
+ 10     dbms_output.put_line(name);
+ 11     dbms_output.put_line(age);
+ 12     dbms_output.put_line(sal);
+ 13     dbms_output.put_line(dep);
+ 14     dbms_output.put_line(project);
+ 15  end;
+ 16  /
+Enter value for empname: 'munna'
+old   8:        name := &empName;
+new   8:        name := 'munna';
+munna
+21
+11000
+IT
+lmno
+PL/SQL procedure successfully completed.
+
+Q4-
+SQL> declare
+  2     empno sh_emp.eno %type;
+  3     age sh_emp.age %type;
+  4  x exception;
+  5  begin
+  6     empno := &empno;
+  7     select e.age into age from sh_emp e where e.eno = empno;
+  8     if age > 60 then
+  9             raise x;
+ 10     end if;
+ 11  exception
+ 12     when x then
+ 13             dbms_output.put_line('age exception');
+ 14  end;
+ 15  /
+Enter value for empno: 'E4'
+old   6:        empno := &empno;
+new   6:        empno := 'E4';
+age exception
+PL/SQL procedure successfully completed.
+
+
+

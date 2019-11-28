@@ -1,0 +1,5 @@
+a number(10,2);
+begin
+exec:a:=avgsal
+dbms_output.put_line(a)
+end

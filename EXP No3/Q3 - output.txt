@@ -1,0 +1,133 @@
+Q1-
+MAX(SALARY)
+-----------
+      11000
+Q2-	  
+MIN(SALARY)
+-----------
+       1100
+Q3-	   
+SUM(SALARY)
+-----------
+      38170
+Q4-	
+AVG(SALARY)
+-----------
+ 6361.66667
+Q5-
+COUNT(ENO)
+----------
+         6
+Q6-		 		 
+MAX(SALARY)
+-----------
+       6600
+Q7-	   
+SUM(SALARY)
+-----------
+      11000
+Q8-	  
+     AGE
+--------
+      53
+Q9-	
+     AGE
+--------
+      21
+Q10-	  
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR
+E3   amrutha  analyst  F         40       7920 12-SEP-14 P2  TIRUR
+E1   munna    manager  F         21      11000 12-AUG-17 P4  TIRUR
+E5   rohith   analyst  M         53       1100 12-AUG-10 P1  TIRUR
+E7   sibin    salesman M         25       6600 15-AUG-10 P3  TIRUR
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  TIRUR
+
+Q11-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ---------
+E1   munna    manager  F         21      11000 12-AUG-17 P4  TIRUR
+E3   amrutha  analyst  F         40       7920 12-SEP-14 P2  TIRUR
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  TIRUR
+E7   sibin    salesman M         25       6600 15-AUG-10 P3  TIRUR
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR
+E5   rohith   analyst  M         53       1100 12-AUG-10 P1  TIRUR
+
+Q12-
+PNO COUNT(ENO)
+--- ----------
+P4           1
+P1           1
+P2           1
+P3           3
+
+Q13-
+DESIG
+--------
+salesman
+manager
+analyst
+
+Q14-
+SUM(SALARY) DESIG    MAX(SALARY) MIN(SALARY) AVG(SALARY)
+----------- -------- ----------- ----------- -----------
+       1100 analyst         1100        1100        1100
+Q15-	   
+ENAME
+--------
+rohith
+sibin
+thanseer
+
+Q16-
+PNO AVG(SALARY)
+--- -----------
+P3         6050
+
+Q17-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY       PNO  PNAME    DNO
+---- -------- -------- - ---------- ---------- --------- --- ---------- ---- -------- ----
+E1   munna    manager  F         21      11000 12-AUG-17 P4  TIRUR      P4	lmno      45
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR      P3	ijkl      55
+E3   amrutha  analyst  F         40       7920 12-SEP-14 P2  TIRUR      P2	efgh      43
+E5   rohith   analyst  M         53       1100 12-AUG-10 P1  TIRUR      P1	abcd      25
+E7   sibin    salesman M         25       6600 15-AUG-10 P3  TIRUR      P3	ijkl      55
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  TIRUR      P3	ijkl      55
+E4   sandra   salesman M         70        500 15-AUG-10 P3  tirur      P3	ijkl      55
+
+
+Q18-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY       PNO  PNAME    DNO
+---- -------- -------- - ---------- ---------- --------- --- ---------- ---- -------- ---
+E1   munna    manager  F         21      11000 12-AUG-17 P4  TIRUR      P4	 lmno     45
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR      P3	 ijkl     55
+E3   amrutha  analyst  F         40       7920 12-SEP-14 P2  TIRUR      P2	 efgh     43
+E5   rohith   analyst  M         53       1100 12-AUG-10 P1  TIRUR      P1	 abcd     25
+E7   sibin    salesman M         25       6600 15-AUG-10 P3  TIRUR      P3	 ijkl     55
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  TIRUR      P3	 ijkl     55
+E4   sandra   salesman M         70        500 15-AUG-10 P3  tirur      P3	 ijkl     55
+																		P5	 pqrs     40
+
+
+Q19-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY       PNO		PNAME   DNO        
+---- -------- -------- - ---------- ---------- --------- --- ---------- -----	------- ---
+E1   munna    manager  F         21      11000 12-AUG-17 P4  TIRUR      P4		lmno    45
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR      P3		ijkl    55
+E3   amrutha  analyst  F         40       7920 12-SEP-14 P2  TIRUR      P2		efgh    43
+E5   rohith   analyst  M         53       1100 12-AUG-10 P1  TIRUR      P1		abcd    25
+E7   sibin    salesman M         25       6600 15-AUG-10 P3  TIRUR      P3		ijkl    55
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  TIRUR      P3		ijkl    55 
+E4   sandra   salesman M         70        500 15-AUG-10 P3  tirur      P3		ijkl    55
+
+Q20-
+PNO  ENO  ENAME    DESIG    S        AGE     SALARY DOJ       CITY		PNAME     	DNO
+---- ---- -------- -------- - ---------- ---------- --------- ------	-------- 	----
+P4   E1   munna    manager  F         21      11000 12-AUG-17 TIRUR		lmno        45
+P3   E2   amal     salesman M         25       4950 01-JAN-17 TIRUR		ijkl        55
+P2   E3   amrutha  analyst  F         40       7920 12-SEP-14 TIRUR		efgh        43
+P1   E5   rohith   analyst  M         53       1100 12-AUG-10 TIRUR		abcd		25
+P3   E7   sibin    salesman M         25       6600 15-AUG-10 TIRUR		ijkl		55
+P3   E8   thanseer salesman M         30       6600 15-AUG-10 TIRUR		ijkl        55
+P3   E4   sandra   salesman M         70        500 15-AUG-10 tirur		ijkl        55

@@ -1,0 +1,13 @@
+alter table SH_emp add city varchar(10);
+
+alter table SH_emp modify salary number(10,3);
+
+alter table SH_emp add constraint SAL1 check(salary > 0);
+
+alter table SH_emp drop constraint SAL1;
+
+
+
+
+
+

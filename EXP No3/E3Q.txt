@@ -1,0 +1,52 @@
+select max(salary) from SH_emp;
+
+select min(salary) from SH_emp;
+
+select sum(salary) from SH_emp;
+
+select avg(salary) from SH_emp;
+
+select count(eno) from SH_emp;
+
+select max(salary) from SH_emp where desig='salesman';
+
+select sum(salary) from SH_emp where desig='manager';
+
+select age from SH_emp where age in (select max(age) from SH_emp);
+
+select age from SH_emp where age in (select min(age) from SH_emp);
+
+select * from SH_emp order by ename;
+
+select * from SH_emp order by salary DESC;
+
+select pno,count(eno) from SH_emp group by pno;
+
+select desig from SH_emp group by desig;
+
+
+
+select sum(salary),desig,max(salary),min(salary),avg(salary) from SH_emp where pno='P1' group by desig having avg(salary)>1000;
+
+select ename from SH_emp where (to_char(sysdate,'yyyy')- to_char(DOJ,'yyyy'))>5;
+
+select pno,avg(salary) from SH_emp group by pno having count(pno)>2;
+
+select * from SH_emp E left join SH_project P on E.pno=P.pno;
+
+
+select * from SH_emp E right join SH_project P on E.pno=P.pno;
+
+
+select * from SH_emp E join SH_project P on E.pno=P.pno;
+
+select * from SH_emp natural join SH_project;
+
+
+
+
+
+
+
+
+

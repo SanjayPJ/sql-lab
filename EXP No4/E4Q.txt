@@ -1,0 +1,32 @@
+select upper(ename) from SH_emp;
+
+select lower(ename) from SH_emp;
+
+select initcap(ename) from SH_emp;
+
+select ename,length(ename) as length from SH_emp;
+
+select concat(eno,ename) as concat from SH_emp;
+
+select substr('oracle',2,3) from dual;
+
+select instr('computer maintenance','a') indexno from dual;
+
+select replace('oracle','a','b') from dual;
+
+select substr(city,1,3) from SH_emp;
+
+SELECT TO_DATE(sysdate) - TO_DATE('09-SEP-1998') AS DateDiff FROM dual;
+
+select trunc(months_between(sysdate,'09-sep-1998')) from dual;
+
+select localtimestamp from dual;
+
+select add_months(sysdate,-3) from dual;
+
+
+select to_char(sysdate,'DD-Month-day- YYYY') as currentDate from dual;
+
+
+
+select ename || ' who has ' || age || ' years is residing in ' || city from SH_emp;

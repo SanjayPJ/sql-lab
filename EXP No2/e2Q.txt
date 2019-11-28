@@ -1,0 +1,39 @@
+select ename from SH_emp;
+
+select ename from SH_emp where desig in ('analyst','salesman');
+
+
+select * from SH_emp where DOJ<'30,JUN,2016';
+
+select 	* from SH_emp;
+
+select * from SH_emp where eno in ('E2','E4','E6','E8');
+
+select ename,pno from SH_emp where pno not in ('P3','P4','P2');
+
+select * from SH_emp where DOJ between'30,JUN,2016' and '1,JUL,2017';
+
+select distinct desig from SH_emp;
+
+select * from SH_emp where pno is NULL;
+
+select * from SH_emp where ename like 's%' or ename like '%s';
+
+select * from SH_emp where ename like '_i%';
+
+select * from SH_emp where ename like 'a%_%a';
+
+select * from SH_emp where (salary >=5000 and salary <=8000);
+
+
+select ename from SH_emp where DOJ in (select max(DOJ) from SH_emp);
+
+delete from SH_emp where age>60;
+
+update SH_emp set salary=salary+(salary*0.2) where (salary >=5000 and salary <=8000);
+
+select * from SH_emp where ename like '%e_';
+
+
+
+

@@ -1,0 +1,9 @@
+select count(eno) from SH_emp where pno not in (select pno from SH_emp where ename in ('amal','rohith'));
+
+select count(eno) from SH_emp where salary>(select avg(salary) from SH_emp);
+
+select * from SH_project where pno=(select pno from SH_emp where salary=(select max(salary) from SH_emp));
+
+select dname from SH_dep where dno=(select dno from SH_emp where age in(select min(age) from SH_emp));
+
+

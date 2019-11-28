@@ -1,0 +1,24 @@
+---tables SH_emp, SH_project,SH_dep---
+
+
+create table SH_emp(eno varchar(4) primary key check(eno like 'E%'),
+ename varchar(8),
+desig varchar(8),
+sex char check(sex in ('M','F')),
+age number(2) check(age>0),
+salary float,
+DOJ date,
+pno varchar(3),
+foreign key (pno) references SH_project(pno));
+
+
+create table SH_project(pno varchar(4) primary key check(pno like 'P%'),
+pname varchar(8),
+dno int,
+foreign key (dno) references SH_dep(dno));
+
+
+create table SH_dep(dno int primary key,
+dname varchar(5) check( dname in ('CSE','EEE','ECE','IT','ME')),
+loc varchar(8));
+

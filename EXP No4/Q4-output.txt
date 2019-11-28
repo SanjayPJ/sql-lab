@@ -1,0 +1,108 @@
+Q1-
+UPPER(EN
+--------
+MUNNA
+AMAL
+AMRUTHA
+ROHITH
+SIBIN
+THANSEER
+
+Q2-
+LOWER(EN
+--------
+munna
+amal
+amrutha
+rohith
+sibin
+thanseer
+
+Q3-
+INITCAP
+--------
+Munna
+Amal
+Amrutha
+Rohith
+Sibin
+Thanseer
+
+Q4-
+ENAME        LENGTH
+-------- ----------
+munna             5
+amal              4
+amrutha           7
+rohith            6
+sibin             5
+thanseer          8
+
+Q5-
+CONCAT
+-----------
+E1munna
+E2amal
+E3amrutha
+E5rohith
+E7sibin
+E8thanseer
+
+Q6-
+SUB
+---
+rac
+
+Q7-
+   INDEXNO
+----------
+        11
+Q8-		
+REPLAC
+------
+orbcle
+
+Q9-
+SUBSTR(CITY,
+------------
+TIR
+TIR
+TIR
+TIR
+TIR
+TIR
+
+Q10-
+  DATEDIFF
+----------
+      7726
+	
+Q11-	
+TRUNC(MONTHS_BETWEEN(SYSDATE,'09-SEP-1998'))
+--------------------------------------------
+                                         253
+
+Q12-
+LOCALTIMESTAMP
+---------------------------------
+04-NOV-19 10.09.20.264000 PM
+
+Q13-
+ADD_MONTH
+---------
+04-AUG-19
+
+Q14-
+CURRENTDATE
+-------------------------------
+04-November -monday   - 2019
+
+Q15-
+ENAME||'WHOHAS'||AGE||'YEARSISRESIDINGIN'||CITY
+-----------------------------------------------
+munna who has 21 years is residing in TIRUR
+amal who has 25 years is residing in TIRUR
+amrutha who has 40 years is residing in TIRUR
+rohith who has 53 years is residing in TIRUR
+sibin who has 25 years is residing in TIRUR
+thanseer who has 30 years is residing in TIRUR

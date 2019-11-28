@@ -1,0 +1,126 @@
+Q1-
+ENAME
+--------
+munna
+amal
+amrutha
+sandra
+rohith
+thans
+sibin
+thanseer
+jishnu
+ajay
+
+Q2-
+ENAME
+--------
+amal
+amrutha
+sandra
+rohith
+thans
+sibin
+thanseer
+jishnu
+
+Q3-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E3   amrutha  analyst  F         40       6000 12-SEP-14 P2  tirur
+E4   sandra   salesman M         70       5000 15-AUG-10 P3  tirur
+E5   rohith   analyst  M         53       1000 12-AUG-10 P1  tirur
+E6   thans    salesman M         65       4000 12-MAR-10 P1  tirur
+E7   sibin    salesman M         25       5000 15-AUG-10 P3  tirur
+E8   thanseer salesman M         30       5000 15-AUG-10 P3  tirur
+E9   jishnu   salesman M         65        900 12-AUG-10 P1  tirur
+E10  ajay     manager  M         65       8000 12-AUG-10 P1  tirur
+
+Q4-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E1   munna    manager  F         21      10000 12-AUG-17 P4  tirur
+E2   amal     salesman M         25       4500 01-JAN-17 P3  tirur
+E3   amrutha  analyst  F         40       6000 12-SEP-14 P2  tirur
+E4   sandra   salesman M         70       5000 15-AUG-10 P3  tirur
+E5   rohith   analyst  M         53       1000 12-AUG-10 P1  tirur
+E6   thans    salesman M         65       4000 12-MAR-10 P1  tirur
+E7   sibin    salesman M         25       5000 15-AUG-10 P3  tirur
+E8   thanseer salesman M         30       5000 15-AUG-10 P3  tirur
+E9   jishnu   salesman M         65        900 12-AUG-10 P1  tirur
+E10  ajay     manager  M         65       8000 12-AUG-10 P1  tirur
+
+Q5-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E2   amal     salesman M         25       4500 01-JAN-17 P3  tirur
+E4   sandra   salesman M         70       5000 15-AUG-10 P3  tirur
+E6   thans    salesman M         65       4000 12-MAR-10 P1  tirur
+E8   thanseer salesman M         30       5000 15-AUG-10 P3  tirur
+
+Q6-
+ENAME    PNO
+-------- ---
+rohith   P1
+thans    P1
+jishnu   P1
+ajay     P1
+
+Q7-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E2   amal     salesman M         25       4950 01-JAN-17 P3  TIRUR
+
+Q8-
+DESIG
+--------
+salesman
+manager
+analyst
+
+Q9-
+no rows selected
+
+Q10-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E4   sandra   salesman M         70       5500 15-AUG-10 P3  TIRUR
+E6   thans    salesman M         65       4400 12-MAR-10 P1  TIRUR
+E7   sibin    salesman M         25       5500 15-AUG-10 P3  TIRUR
+
+Q11-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E7   sibin    salesman M         25       5500 15-AUG-10 P3  TIRUR
+E9   jishnu   salesman M         65        990 12-AUG-10 P1  TIRUR
+
+Q12-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- -----
+E3   amrutha  analyst  F         40       6600 12-SEP-14 P2  TIRUR
+
+Q13-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- ------
+E3   amrutha  analyst  F         40       6600 12-SEP-14 P2  TIRUR
+E4   sandra   salesman M         70       5500 15-AUG-10 P3  TIRUR
+E7   sibin    salesman M         25       5500 15-AUG-10 P3  TIRUR
+E8   thanseer salesman M         30       5500 15-AUG-10 P3  TIRUR
+
+Q14-
+ENAME
+-------
+munna
+
+Q15-
+4 rows deleted.
+
+Q16-
+3 rows updated.
+
+Q17-
+ENO  ENAME    DESIG    S        AGE     SALARY DOJ       PNO CITY
+---- -------- -------- - ---------- ---------- --------- --- -------
+E8   thanseer salesman M         30       6600 15-AUG-10 P3  TIRUR
+
+
